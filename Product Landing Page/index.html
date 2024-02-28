@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <title>Product Landing Page</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h6><img src="" alt="Company logo"></h6>
+            Company Name
+        </div>
+        <section class="menu">
+
+            <ul class="menu-list">
+                <li>Home</li>
+                <li class="active">Products</li>
+                <li>Community</li>
+                <li>About Us</li>
+                <li>Contacts</li>
+            </ul>
+
+            <button>
+                <i class="fas fa-times"></i>
+                <i class="fas fa-bars"></i>
+            </button>
+        </section>
+    </header>
+
+    <section class="main">
+
+        <section class="left">
+            <p class="title">Introducing Our<strong>New Product</strong></p>
+            <p class="msg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nobis culpa at nihil
+                sit! Dignissimos, doloremque.</p>
+            <button class="cta"><span>Buy now</span>
+                <i class="fas fa-angle-right"></i></button>
+        </section>
+
+        <section class="right">
+            <img src="images/image.png" alt="Shoes">
+            <div class="colors">
+                <div class="item pink active">
+                    <div class="color-selector"></div>
+                    <div class="additional-info">
+                        <p>Prize   </p>
+                        <p>xxxxx/-</p>
+                    </div>
+                    <img src="images/image(1).png">
+                </div>
+                <div class="item blue">
+                    <div class="color-selector"></div>
+                    <img src="images/image(1).png">
+                </div>
+                <div class="item yellow">
+                    <div class="color-selector"></div>
+                    <img src="images/image(1).png">
+                </div>
+            </div>
+        </section>
+
+    </section>
+
+    <script>
+        var menu = document.querySelector('.menu');
+        var menuBtn = document.querySelector('.menu button');
+        menuBtn.addEventListener('click', ()=> {
+            menu.classList.toggle('opened')
+        })
+    </script>
+</body>
+
+</html>
